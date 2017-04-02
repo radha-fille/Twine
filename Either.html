@@ -11,47 +11,9 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="Either" startnode="1" creator="Twine" creator-version="2.0.11" ifid="B678FB3A-7A72-4433-8773-BFBFE916AB86" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Snippet" tags="" position="262,41">Clue variable sets:
-
-{{(set: $char1 to &quot;Prof Plum&quot;)
-(set: $char2 to &quot;Miss Scarlet&quot;)
-(set: $wpn1 to &quot;candlestick&quot;)
-(set: $wpn2 to &quot;rope&quot;)
-(set: $place1 to &quot;garden&quot;)
-{{(set: $char1 to &quot;Prof Plum&quot;)
-(set: $char2 to &quot;Miss Scarlet&quot;)
-(set: $wpn1 to &quot;candlestick&quot;)
-(set: $wpn2 to &quot;rope&quot;)
-(set: $place1 to &quot;garden&quot;)
-(set: $place2 to &quot;lounge&quot;)}
-
-
-(set: $solve to (prompt: &quot;Your final findings?&quot;))
-(if: $solve is &quot;Prof Plum, candlestick, garden&quot;)[Yes! You&#39;ve solved it! It was $char1 who did it in the $place1 with a $wpn1.]
- (else:)[Keep Sluething!]
- 
- }
- 
- [[Home]]
-
-Magic Box, either
-
-(live: 0.5s)[(either: &quot;Bang!&quot;, &quot;Kaboom!&quot;, &quot;Whammo!&quot;, &quot;Pow!&quot;) ] 
-
-Inventory
-
-(set: $inv to (a: &quot;Smart Phone&quot;, &quot;Keys&quot;, &quot;EZ Pass&quot;))
-
-(set: $inv to $inv - (a: &quot;Keys&quot;)) 
-
-
-Now I only have $inv
-
-(if: $inv contains &quot;Keys&quot;)[Oh! You can use your keys to [[unlock your front door]].]
-(else:)[You cannot open the door. The door is locked.] 
-
-I have $inv</tw-passagedata>
-<tw-passagedata pid="2" name="Color" tags="" position="553,114">(set: $color to (either: &quot;brown&quot;, &quot;black&quot;, &quot;red&quot;, &quot;blonde&quot;))
+<tw-storydata name="Either" startnode="1" creator="Twine" creator-version="2.0.11" ifid="B678FB3A-7A72-4433-8773-BFBFE916AB86" format="Harlowe" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+</script><tw-passagedata pid="1" name="Color" tags="" position="553,114">(set: $color to (either: &quot;brown&quot;, &quot;black&quot;, &quot;red&quot;, &quot;blonde&quot;))
 
 My hair is $color today!
 
@@ -62,8 +24,8 @@ My hair is $color today!
 
 
 [[Colors left|Hair]]</tw-passagedata>
-<tw-passagedata pid="3" name="Happy with hair" tags="" position="553,264">Double-click this passage to edit it.</tw-passagedata>
-<tw-passagedata pid="4" name="Hair" tags="" position="732,130">(set: $inv to $inv - (a: $color)) 
+<tw-passagedata pid="2" name="Happy with hair" tags="" position="553,264">Double-click this passage to edit it.</tw-passagedata>
+<tw-passagedata pid="3" name="Hair" tags="" position="732,130">(set: $inv to $inv - (a: $color)) 
 
 I have $inv</tw-passagedata>
 </tw-storydata>
